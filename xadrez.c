@@ -13,12 +13,12 @@ int main()
     printf("*MOVIMENTO BISPO*\n\n");
     for (int i = 1; i <= 4; i++)
     {
-        printf("bispo cima %d\n", i);
+        printf("bispo cima, movimento: %d\n", i);
     }
 
     for (int i = 1; i <= 4; i++)
     {
-        printf("bispo direita %d\n", i);
+        printf("bispo direita, movimento: %d\n", i);
     }
     printf("\n\n*************\n\n");
     printf("MOVIMENTO TORRE\n\n");
@@ -26,7 +26,7 @@ int main()
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
     int T = 1;
     while (T <= 8){
-        printf("Torre direita %d\n", T);
+        printf("Torre direita, movimento: %d\n", T);
         T++;
     }
    
@@ -39,7 +39,7 @@ int main()
     int R = 1;
 
     do {
-        printf("Rainha esquerda %d\n", R);
+        printf("Rainha esquerda, movimento: %d\n", R);
         R++;
     }  while (R <= 8);
 
@@ -47,7 +47,26 @@ int main()
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n\n*************\n\n");
+    printf("MOVIMENTO CAVALO\n\n");
 
+    int C = 1, i = 1;
+    while (C <= 2)
+    {
+        printf("Cavalo baixo, movimento: %d\n", C);
+        if (C == 2)
+        {
+            for (i = 1; i <= 1; i++)
+            {
+                printf("Cavalo esquerda, movimento: %d\n", i);
+            }
+            
+        }
+        C++;
+    }
+    
+    
+    
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
@@ -57,3 +76,6 @@ int main()
 
     return 0;
 }
+
+
+
